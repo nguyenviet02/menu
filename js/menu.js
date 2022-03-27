@@ -98,9 +98,11 @@ video_player_background.addEventListener("click", () => {
 sound.addEventListener("click", () => {
   if (main_audio.paused) {
     main_audio.play();
+    main_audio.muted = false;
     sound_desc.innerText = "Tắt nhạc nền";
   } else {
     main_audio.pause();
+    main_audio.muted = true;
     sound_desc.innerText = "Bật nhạc nền";
   }
 })

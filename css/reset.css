@@ -5,13 +5,19 @@
 }
 
 body {
+  position: relative;
   height: 100vh;
-  max-height: 100vh;
   width: 100vw;
   font-family: "Roboto", sans-serif;
   background-color: rgb(153, 137, 137);
   background-size: cover;
+  overflow: hidden;
+}
+
+.menu-action {
   position: relative;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 

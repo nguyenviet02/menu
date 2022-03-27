@@ -47,8 +47,9 @@
 .menu--bottom .menu__container {
   position: absolute;
   display: flex;
+  justify-content: center;
   align-items: center;
-  max-width: 80%;
+  width: 100%;
   height: 100%;
   border-radius: 20px;
 }

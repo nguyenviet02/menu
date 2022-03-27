@@ -20,126 +20,128 @@
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <section class="nav-bar">
-    <div class="nav-bar__header">
-      <span>Mithirine Hotel</span>
+  <section class="menu-action">
+    <!-- Navigation Bar -->
+    <section class="nav-bar">
+      <div class="nav-bar__header">
+        <span>Mithirine Hotel</span>
+      </div>
+      <ul class="nav-bar__main">
+      </ul>
+      <div class="nav-bar__toggle">
+        <i class="fas fa-angle-double-right"></i>
+      </div>
+    </section>
+
+    <!-- Map Iframe -->
+    <div class="map-iframe">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.6008142083715!2d105.57342871535562!3d21.28726328585889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134fb95b91489cf%3A0x81d82c34cc8cafe4!2zROG7sSDDgW4gVE1TIMSQ4bqnbSBDw7NpIFbEqW5oIFnDqm4gVsSpbmggUGjDumM!5e0!3m2!1sen!2s!4v1632354820458!5m2!1sen!2s"
+        frameborder="0">
+      </iframe>
+      <button class="map-close">&times;</button>
     </div>
-    <ul class="nav-bar__main">
-    </ul>
-    <div class="nav-bar__toggle">
-      <i class="fas fa-angle-double-right"></i>
+
+    <!-- Video Player Iframe-->
+    <div class="video-player">
+      <iframe width="1000" height="560" src="" allow='autoplay' frameborder="0" allowfullscreen class="main-video">
+      </iframe>
+      <div class="video-player-background"></div>
+    </div>
+
+    <!-- Info Iframe -->
+    <div class="info-iframe">
+      <iframe src="https://online.fliphtml5.com/twzer/ksey/#p=1" frameborder="0" class="info-iframe__iframe">
+      </iframe>
+      <button class="info-iframe-close">&times;</button>
+    </div>
+
+    <!-- Music -->
+    <audio src="./audio/letitgo.mp3" loop="true" muted="true" autoplay="true" class="main-audio"></audio>
+
+    <!-- Menu Bottom -->
+    <div class="menu--bottom active">
+      <ul class="menu__container">
+        <li class="menu__container__item fullview">
+          <img src="./images/toancanh.png" alt="Toàn cảnh">
+        </li>
+        <li class="menu__container__item ground">
+          <img src="./images/matbang.png" alt="Mặt bằng">
+          <ul class="sub-menu">
+            <li>Mặt bằng tổng thể</li>
+            <li>Mặt bằng wonder gateway</li>
+          </ul>
+        </li>
+        <li class="menu__container__item perspective">
+          <img src="./images/3d.png" alt="Phối cảnh">
+          <ul class="sub-menu">
+            <li>Phối cảnh tổng thể</li>
+            <li>Phối cảnh đêm</li>
+            <li>Phối cảnh hồ</li>
+            <li>Phối cảnh 3d</li>
+          </ul>
+        </li>
+        <li class="menu__container__item utilities">
+          <img src="./images/tienich.png" alt="Tiện ích">
+          <ul class="sub-menu">
+            <li>Tiện ích ngoại khu</li>
+            <li>Tiện ích nội khu</li>
+          </ul>
+        </li>
+        <li class="menu__container__item map">
+          <img src="./images/map.png" alt="Bản đồ">
+        </li>
+        <li class="menu__container__item video">
+          <img src="./images/video.png" alt="Video">
+          <ul class="sub-menu">
+            <li class="video-1">Video 1</li>
+            <li class="video-2">Video 2</li>
+          </ul>
+        </li>
+        <li class="menu__container__item menu--bottom__close">
+          <i class="far fa-times-circle"></i>
+        </li>
+      </ul>
+    </div>
+    <button class="menu--bottom__open"><i class="fas fa-angle-double-up"></i></button>
+
+    <!-- Menu Left -->
+    <div class="menu--right">
+      <div class="menu--right__button">
+        <span class="menu--right__button__icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <span class="menu--right__button__text">Open</span>
+      </div>
+      <ul class="main-menu">
+        <div class="main-menu__btn">Close</div>
+        <li class="main-menu__item sound">
+          <img src="./images/sound.png" alt="Sound">
+          <div class="desc sound-desc">Tắt nhạc nền</div>
+        </li>
+        <li class="main-menu__item info">
+          <img src="./images/info.png" alt="Thông tin">
+          <div class="desc">Xem giới thiệu</div>
+        </li>
+        <li class="main-menu__item fullscreen">
+          <img src="./images/fullscreen.png" alt="Fullscreen">
+          <div class="desc fullscreen-desc">Chế độ toàn màn hình</div>
+        </li>
+        <li class="main-menu__item facebook">
+          <a href="https://www.facebook.com/TmsHomesWonderWorld1/" target="_blank">
+            <img src="./images/facebook.png" alt="Facebook">
+          </a>
+          <div class="desc">Facebook</div>
+        </li>
+        <li class="main-menu__item website">
+          <a href="https://tmswonderworld.vn/" target="_blank">
+            <img src="./images/web-icon.png" alt="Website">
+          </a>
+          <div class="desc">Website</div>
+        </li>
+      </ul>
     </div>
   </section>
-
-  <!-- Map Iframe -->
-  <div class="map-iframe">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.6008142083715!2d105.57342871535562!3d21.28726328585889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134fb95b91489cf%3A0x81d82c34cc8cafe4!2zROG7sSDDgW4gVE1TIMSQ4bqnbSBDw7NpIFbEqW5oIFnDqm4gVsSpbmggUGjDumM!5e0!3m2!1sen!2s!4v1632354820458!5m2!1sen!2s"
-      frameborder="0">
-    </iframe>
-    <button class="map-close">&times;</button>
-  </div>
-
-  <!-- Video Player Iframe-->
-  <div class="video-player">
-    <iframe width="1000" height="560" src="" allow='autoplay' frameborder="0" allowfullscreen class="main-video">
-    </iframe>
-    <div class="video-player-background"></div>
-  </div>
-
-  <!-- Info Iframe -->
-  <div class="info-iframe">
-    <iframe src="https://online.fliphtml5.com/twzer/ksey/#p=1" frameborder="0" class="info-iframe__iframe">
-    </iframe>
-    <button class="info-iframe-close">&times;</button>
-  </div>
-
-  <!-- Music -->
-  <audio src="./audio/letitgo.mp3" loop="true" class="main-audio"></audio>
-
-  <!-- Menu Bottom -->
-  <div class="menu--bottom active">
-    <ul class="menu__container">
-      <li class="menu__container__item fullview">
-        <img src="./images/toancanh.png" alt="Toàn cảnh">
-      </li>
-      <li class="menu__container__item ground">
-        <img src="./images/matbang.png" alt="Mặt bằng">
-        <ul class="sub-menu">
-          <li>Mặt bằng tổng thể</li>
-          <li>Mặt bằng wonder gateway</li>
-        </ul>
-      </li>
-      <li class="menu__container__item perspective">
-        <img src="./images/3d.png" alt="Phối cảnh">
-        <ul class="sub-menu">
-          <li>Phối cảnh tổng thể</li>
-          <li>Phối cảnh đêm</li>
-          <li>Phối cảnh hồ</li>
-          <li>Phối cảnh 3d</li>
-        </ul>
-      </li>
-      <li class="menu__container__item utilities">
-        <img src="./images/tienich.png" alt="Tiện ích">
-        <ul class="sub-menu">
-          <li>Tiện ích ngoại khu</li>
-          <li>Tiện ích nội khu</li>
-        </ul>
-      </li>
-      <li class="menu__container__item map">
-        <img src="./images/map.png" alt="Bản đồ">
-      </li>
-      <li class="menu__container__item video">
-        <img src="./images/video.png" alt="Video">
-        <ul class="sub-menu">
-          <li class="video-1">Video 1</li>
-          <li class="video-2">Video 2</li>
-        </ul>
-      </li>
-      <li class="menu__container__item menu--bottom__close">
-        <i class="far fa-times-circle"></i>
-      </li>
-    </ul>
-  </div>
-  <button class="menu--bottom__open"><i class="fas fa-angle-double-up"></i></button>
-
-  <!-- Menu Left -->
-  <div class="menu--right">
-    <div class="menu--right__button">
-      <span class="menu--right__button__icon">
-        <i class="fas fa-bars"></i>
-      </span>
-      <span class="menu--right__button__text">Open</span>
-    </div>
-    <ul class="main-menu">
-      <div class="main-menu__btn">Close</div>
-      <li class="main-menu__item sound">
-        <img src="./images/sound.png" alt="Sound">
-        <div class="desc sound-desc">Tắt nhạc nền</div>
-      </li>
-      <li class="main-menu__item info">
-        <img src="./images/info.png" alt="Thông tin">
-        <div class="desc">Xem giới thiệu</div>
-      </li>
-      <li class="main-menu__item fullscreen">
-        <img src="./images/fullscreen.png" alt="Fullscreen">
-        <div class="desc fullscreen-desc">Chế độ toàn màn hình</div>
-      </li>
-      <li class="main-menu__item facebook">
-        <a href="https://www.facebook.com/TmsHomesWonderWorld1/" target="_blank">
-          <img src="./images/facebook.png" alt="Facebook">
-        </a>
-        <div class="desc">Facebook</div>
-      </li>
-      <li class="main-menu__item website">
-        <a href="https://tmswonderworld.vn/" target="_blank">
-          <img src="./images/web-icon.png" alt="Website">
-        </a>
-        <div class="desc">Website</div>
-      </li>
-    </ul>
-  </div>
 </body>
 
 </html>
