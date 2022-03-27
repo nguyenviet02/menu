@@ -68,6 +68,9 @@ map_btn.addEventListener("click", () => {
 map_close.addEventListener("click", () => {
   map_iframe.classList.remove("active");
 });
+map_close.addEventListener("touchstart", () => {
+  map_iframe.classList.remove("active");
+});
 
 // Đóng mở info iframe
 info_btn.addEventListener("click", () => {
