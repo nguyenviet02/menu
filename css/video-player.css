@@ -16,6 +16,24 @@
   transition: all 0.3s ease-in-out;
 }
 
+.video-player .video-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  width: 50px;
+  height: 50px;
+
+  font-size: 60px;
+  color: red;
+
+  background-color: transparent;
+  border: none;
+}
+.video-player .video-close:hover {
+  text-decoration: underline;
+}
+
 .video-player.active {
   opacity: 1;
   pointer-events: all;

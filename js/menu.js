@@ -22,6 +22,7 @@ const fullscreen_btn = document.querySelector(".fullscreen");
 const fullscreen_desc = document.querySelector(".fullscreen-desc");
 
 const video_player = document.querySelector(".video-player");
+const video_close = document.querySelector(".video-close");
 const main_video = document.querySelector(".main-video");
 const video_player_background = document.querySelector(".video-player-background");
 const video_1 = document.querySelector(".video-1");
@@ -96,6 +97,12 @@ video_player_background.addEventListener("click", () => {
   main_video.src = "";
   main_audio.play();
 });
+video_close.addEventListener("click", () => {
+  video_player.classList.remove("active");
+  main_video.src = "";
+  main_audio.play();
+});
+
 
 // Bật tắt âm thanh
 sound.addEventListener("click", () => {
