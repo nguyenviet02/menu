@@ -1,0 +1,129 @@
+.menu--right {
+  position: fixed;
+  top: 180px;
+  right: 10px;
+}
+
+.menu--right__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.menu--right__button__icon {
+  font-size: 35px;
+  font-weight: bold;
+  color: #0e9096;
+}
+.menu--right__button__text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.menu--right .main-menu {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  transform: translateX(200%);
+
+  width: 50px;
+  height: 320px;
+  padding: 20px 0;
+  border-radius: 10px;
+
+  background-color: #0e9096;
+  z-index: 1;
+  transition: all 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.menu--right .main-menu.active {
+  transform: translateX(0);
+}
+.menu--right .main-menu__btn {
+  position: absolute;
+  top: 20;
+  right: 80%;
+
+  border-radius: 5px;
+  padding: 5px;
+
+  transform: rotate(-90deg);
+
+  font-size: 12px;
+  color: #fff;
+  background-color: #0e9096;
+}
+.menu--right .sound img {
+  width: 27px;
+  height: 28px;
+  object-fit: contain;
+}
+.menu--right .info img {
+  width: 27px;
+  height: 23x;
+  object-fit: contain;
+}
+.menu--right .fullscreen img {
+  width: 25px;
+  height: 22px;
+  object-fit: contain;
+}
+.menu--right .facebook img {
+  width: 36px;
+  height: 35px;
+  object-fit: contain;
+}
+.menu--right .website img {
+  width: 34px;
+  height: 33px;
+  object-fit: contain;
+}
+.menu--right .main-menu__item img {
+  transition: all 0.3s ease-in-out;
+}
+.menu--right .main-menu__item {
+  position: relative;
+}
+.menu--right .main-menu__item .desc {
+  position: absolute;
+  top: 0;
+  right: 150%;
+
+  border: 1px solid #fff;
+  border-radius: 8px;
+
+  width: fit-content;
+  height: fit-content;
+
+  white-space: nowrap;
+  padding: 10px;
+  background-color: #0e9096;
+
+  font-size: 10px;
+  color: #fff;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+.menu--right .main-menu__item:hover .desc {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu--right .main-menu__item:hover img {
+  transform: scale(1.2);
+}
+
+.menu--right__button:hover {
+  transform: translateY(5px);
+}
+
+
+
