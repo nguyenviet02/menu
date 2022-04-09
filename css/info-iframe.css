@@ -18,18 +18,46 @@
 
 .info-iframe .info-iframe-close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 30px; /* Chỉnh vị trí nút ở đây */
+  right: 100px;
+  padding: 5px 10px;
+  width: 40px;
 
-  width: 50px;
-  height: 50px;
-
-  font-size: 60px;
-  color: red;
-
-  background-color: transparent;
+  background-color: white; /* Đây là màu nền */
   border: none;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.2s linear;
+  cursor: pointer;
 }
+
+.info-iframe .info-iframe-close .fa-times-circle {
+  font-size: 18px;
+  font-weight: 600;
+  color: red; /* Đây là màu nút X */
+}
+.info-iframe .info-iframe-close span {
+  font-size: 16px;
+  font-weight: 700;
+  color: black; /* Đây là màu chữ */
+
+  opacity: 0;
+  width: 0;
+  margin-left: 0;
+  pointer-events: none;
+  transition: opacity 0.1 linear, width 0.5s linear;
+}
+
 .info-iframe .info-iframe-close:hover {
-  text-decoration: underline;
+  width: 100px;
+}
+
+.info-iframe .info-iframe-close:hover span {
+  margin-left: 10px;
+  width: auto;
+  opacity: 1;
+  pointer-events: all;
 }

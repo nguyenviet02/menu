@@ -125,5 +125,103 @@
   transform: translateY(5px);
 }
 
+/* Heart */
 
+.heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+}
 
+/* .heart-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  color: #fff;
+} */
+
+.heart-increment {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+  color: #fff;
+  opacity: 0;
+  /* animation-play-state: paused; */
+}
+
+.heart-icon {
+  color: #fff;
+  font-size: 27px; /* Chỉnh size */
+  transition: scale 0.2s ease-in-out;
+  animation: heartBeat 0.8s infinite;
+}
+
+.heart-icon:hover {
+  font-size: 29px;
+}
+
+.heart-icon.active {
+  animation: heartActive 0.5s forwards;
+  animation-play-state: paused;
+}
+
+.heart-icon.active ~ .heart-increment {
+  animation: heart-increment 0.5s linear alternate;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes heartActive {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.6);
+  }
+  40% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(0.8);
+    color: #ff0000;
+  }
+  100% {
+    transform: scale(1.3);
+    color: #ff0000;
+  }
+}
+
+@keyframes heart-increment {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  50% {
+    top: -10%;
+    opacity: 0.5;
+  }
+  100% {
+    top: -25%;
+    opacity: 1;
+  }
+}

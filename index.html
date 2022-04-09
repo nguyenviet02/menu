@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EB2WT2STLE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EB2WT2STLE');
+  </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +24,7 @@
   <link rel="stylesheet" href="./css/info-iframe.css">
   <link rel="stylesheet" href="./css/menu-bottom.css">
   <link rel="stylesheet" href="./css/menu-right.css">
+  <link rel="stylesheet" href="./css/intro.css">
   <script src="./js/menu.js" defer></script>
   <script src="./js/nav.js" defer></script>
 </head>
@@ -54,7 +64,10 @@
     <div class="info-iframe">
       <iframe src="https://online.fliphtml5.com/twzer/ksey/#p=1" frameborder="0" class="info-iframe__iframe">
       </iframe>
-      <button class="info-iframe-close">&times;</button>
+      <button class="info-iframe-close">
+        <i class="fas fa-times-circle"></i>
+        <span>Close</span>
+      </button>
     </div>
 
     <!-- Music -->
@@ -131,9 +144,13 @@
           <img src="./images/info.png" alt="Thông tin">
           <div class="desc">Xem giới thiệu</div>
         </li>
-        <li class="main-menu__item fullscreen">
-          <img src="./images/fullscreen.png" alt="Fullscreen">
-          <div class="desc fullscreen-desc">Chế độ toàn màn hình</div>
+        <li class="main-menu__item heart">
+          <i class="fas fa-heart heart-icon"></i>
+          <div class="desc fullscreen-desc">Give Heart</div>
+          <span class="heart-increment">+1</span>
+          <span class="heart-count">
+            199
+          </span>
         </li>
         <li class="main-menu__item facebook">
           <a href="https://www.facebook.com/TmsHomesWonderWorld1/" target="_blank">
@@ -142,14 +159,15 @@
           <div class="desc">Facebook</div>
         </li>
         <li class="main-menu__item website">
-          <a href="https://tmswonderworld.vn/" target="_blank">
+          <a href="./form.html" target="_blank">
             <img src="./images/web-icon.png" alt="Website">
           </a>
           <div class="desc">Website</div>
         </li>
       </ul>
     </div>
-  </section>
+
+
 </body>
 
 </html>

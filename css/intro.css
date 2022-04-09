@@ -1,0 +1,79 @@
+.intro {
+  background: black; /* Màu nền intro */
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: intro 1.5s ease-in-out forwards; /* Thời gian intro biến mất */
+  animation-delay: 1.6s; /*Khoảng thời gian intro xuất hiện */
+}
+.slider {
+  background: #171d22;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  animation: slider 1.5s ease-in-out;
+  animation-delay: 1.6s; /*Thời gian slider xuất hiện, trùng với khoảng thời gian xuất hiện của intro */
+}
+
+/* Sửa cỡ chữ ở đây */
+.intro-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide .text {
+  transform: translateY(100%);
+  display: inline-block;
+  animation: show-text 1s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes show-text {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slider {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes intro {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .intro-text {
+    font-size: 40px;
+  }
+}

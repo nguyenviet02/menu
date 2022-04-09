@@ -13,7 +13,6 @@ nav_bar__toggle.addEventListener('click', () => {
   }
 });
 
-
 const navDtb = [
   {
     imgSrc: "./images/thumb.jpg",
@@ -57,6 +56,11 @@ const navDtb = [
   },
 ];
 
+const fullview = document.querySelector(".fullview");
+fullview.onclick = function () {
+  window.location.href = "https://online.fliphtml5.com/twzer/ksey/#p=1";
+}
+
 //* Render
 
 const htmls = navDtb.map(navItem => {
@@ -69,6 +73,7 @@ const htmls = navDtb.map(navItem => {
         <span>${navItem.text}</span>
       </div>
       <span class="nav-bar__main__item__tick">✔</span>
+      <img src="" alt="" />
     </li>
   `;
 }).join('');

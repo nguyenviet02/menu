@@ -137,21 +137,50 @@ function closeFullscreen() {
   }
 }
 
-fullscreen_btn.addEventListener("click", () => {
-  if (!isFullscreen) {
-    openFullscreen();
-    isFullscreen = true;
-    fullscreen_desc.innerText = "Thoát chế độ toàn màn hình";
-  } else {
-    closeFullscreen();
-    isFullscreen = false;
-    fullscreen_desc.innerText = "Chế độ toàn màn hình";
-  }
-});
-
 window.addEventListener("load", () => {
   setTimeout(() => {
     window.scrollTo(0, 1);
   }, 0);
 });
+
+// Heart
+const apiURL = "https://mydtb.herokuapp.com/liked";
+let value = 0;
+fetch(apiURL)
+  .then(response => response.json())
+  .then(data => {
+    value = data[0].value;
+    heart_count.innerHTML = value;
+  })
+
+function change(count) {
+  const data = {
+    value: count
+  };
+  fetch(apiURL + "/0", {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+};
+const heart = document.querySelector(".heart");
+const heart_icon = document.querySelector(".heart-icon");
+const heart_count = document.querySelector(".heart-count");
+heart.addEventListener("click", () => {
+  heart_icon.classList.add("active");
+  heart_icon.style.animationPlayState = "running";
+  value++;
+  heart_count.innerText = value;
+  change(value);
+  setTimeout(() => {
+    heart_icon.classList.remove("active");
+    heart_icon.style.color = "#ff0000";
+    heart_icon.style.scale = "1.6";
+    heart_icon.style.animationPlayState = "paused";
+  }, 500);
+});
+
+
 
